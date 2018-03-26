@@ -1,0 +1,120 @@
+:root {
+  --grey: #aaa;
+  --black: #333;
+  --white: #fff;
+
+  --red: #f00;
+  --green: #0f0;
+
+  --transparent: rgba(0, 0, 0, .3);
+}
+
+::selection {
+  background: var(--grey);
+}
+
+body {
+  font-size: 14px;
+  text-align: center;
+  color: var(--white);
+  background: var(--black);
+  font-family: 'Roboto', sans-serif;
+  text-shadow: 0 0 3px var(--transparent);
+}
+
+h1 {
+  padding: 30px 0;
+  font-size: 70px;
+  font-family: 'Lobster', cursive;
+}
+
+span {
+  font-size: 30px;
+}
+
+.controls {
+  clear: both;
+  overflow: hidden;
+}
+
+.controls > div {
+  float: left;
+  width: 150px;
+}
+
+.add-break-length,
+.add-session-length,
+.subtract-break-length,
+.subtract-session-length {
+  padding: 10px;
+  cursor: pointer;
+  user-select: none;
+  display: inline-block;
+}
+
+.pomodoro {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.circle {
+  width: 300px;
+  padding: 10px;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: 2px solid var(--white);
+}
+
+.background {
+  top: 5px;
+  left: 5px;
+  width: 286px;
+  height: 286px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.background.red {
+  background: var(--red);
+}
+
+.background.green {
+  background: var(--green);
+}
+
+.cover {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: var(--black);
+}
+
+.title {
+  left: 0;
+  top: 70px;
+  width: 100%;
+  font-size: 40px;
+  position: absolute;
+}
+
+.timer {
+  left: 0;
+  top: 150px;
+  width: 100%;
+  font-size: 50px;
+  position: absolute;
+}
+
+.toggle-paused {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  position: absolute;
+}

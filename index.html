@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <title>Pomodoro</title>
+
+    <!-- Fonts (Lobster + Roboto) -->
+    <link href="https://goo.gl/R9V8Dt" rel="stylesheet">
+
+    <!-- Style -->
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <h1>Pomodoro</h1>
+
+    <div class="pomodoro">
+      <div class="controls">
+        <div>
+          <div>BREAK LENGTH</div>
+          <span class="subtract-break-length">-</span>
+          <span class="b-len"></span>
+          <span class="add-break-length">+</span>
+        </div>
+
+        <div>
+          <div>SESSION LENGTH</div>
+          <span class="subtract-session-length">-</span>
+          <span class="s-len"></span>
+          <span class="add-session-length">+</span>
+        </div>
+      </div>
+
+      <div class="circle">
+        <div class="background"></div>
+        <div class="cover"></div>
+        <div class="title"></div>
+        <div class="timer"></div>
+        <div class="toggle-paused"></div>
+      </div>
+    </div>
+
+    <!-- Load Require.JS then bootstrap index.js -->
+    <script data-main="index" src="https://goo.gl/HCiHTU"></script>
+  </body>
+</html>
